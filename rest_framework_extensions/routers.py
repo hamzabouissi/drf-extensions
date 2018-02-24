@@ -4,7 +4,7 @@ from django.core.exceptions import ImproperlyConfigured
 try:
     from django.urls.resolvers import NoReverseMatch
 except ImportError:
-    from django.core.urlresolvers import NoReverseMatch
+    from django.urls.exceptions import NoReverseMatch
 
 from rest_framework.routers import (
     DefaultRouter,
